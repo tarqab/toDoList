@@ -69,7 +69,7 @@ const Login = () => {
           <h1
             onClick={moveToSignUp}
             className="text-green-500 
-          pt-4 hover:border-b-2 border-green-500 
+          pt-4 hover:border-b-2 border-slate-900 
           hover:cursor-pointer"
           >
             Create a new account
