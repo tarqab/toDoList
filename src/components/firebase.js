@@ -1,12 +1,12 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+import { initializeApp } from "firebase/app";
+
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database"
 import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCW8Q-ss9B_Ls4QywYfkKkQteBUG8Cpm1s",
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
   authDomain: "todoapp-a8544.firebaseapp.com",
   projectId: "todoapp-a8544",
   storageBucket: "todoapp-a8544.appspot.com",
@@ -17,3 +17,5 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app)
+
+export const auth = getAuth();
