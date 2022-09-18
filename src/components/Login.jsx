@@ -68,7 +68,7 @@ const Login = () => {
         <div>
           <h1
             onClick={moveToSignUp}
-            className="text-green-500 
+            className="text-slate-900 
           pt-4 hover:border-b-2 border-slate-900 
           hover:cursor-pointer"
           >
