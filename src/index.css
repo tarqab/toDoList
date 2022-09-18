@@ -33,7 +33,7 @@ from-[#2F80ED] to-[#1CB5E0] relative
     @apply w-60 h-8 p-2 m-1 rounded-lg 
 }
 .tittle-sign-up {
-    @apply flex justify-center items-center 
+    @apply flex justify-center items-center text-white
     pt-4 text-3xl font-serif font-bold sm:text-xl xs:text-xl 
 }
 
